@@ -4,8 +4,8 @@
 
 ## To open the application:
 
-### Backend:
+### Backend:pdf-viewer-node
 node index.js
 
-### Frontend:
+### Frontend:pdf-viewer
 npm run dev
