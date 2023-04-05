@@ -13,7 +13,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      // 将以 /pdfs 开头的请求代理到 http://127.0.0.1:3000/pdfs
+      // starts with "/pdfs" request proxy to http://127.0.0.1:3000/pdfs
       '/pdfs': 'http://127.0.0.1:3000',
       '/pdf': 'http://127.0.0.1:3000',
     },
