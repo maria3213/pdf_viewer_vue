@@ -2,6 +2,7 @@ const express = require('express');
 const fsPromise = require('fs').promises;
 const fs = require('fs');
 const path = require('path');
+require("dotenv").config();
 
 const app = express();
 const pdfDirectory = __dirname + '/pdfs';
@@ -61,6 +62,6 @@ app.get('/pdf/:filePath', async (req, res) => {
   fileStream.pipe(res);
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('Server started on port 3000');
 });
